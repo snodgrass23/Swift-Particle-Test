@@ -18,6 +18,8 @@
 		38FE6031196B1F420037AF56 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 38FE602F196B1F420037AF56 /* spark.png */; };
 		38FE6034196B274E0037AF56 /* EngineParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38FE6032196B274E0037AF56 /* EngineParticle.sks */; };
 		38FE6035196B274E0037AF56 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 38FE6033196B274E0037AF56 /* spark.png */; };
+		38FE6037196B2BCB0037AF56 /* engine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38FE6036196B2BCB0037AF56 /* engine.wav */; };
+		38FE6039196B2EAE0037AF56 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FE6038196B2EAE0037AF56 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		38FE602F196B1F420037AF56 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = ../spark.png; sourceTree = "<group>"; };
 		38FE6032196B274E0037AF56 /* EngineParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EngineParticle.sks; sourceTree = "<group>"; };
 		38FE6033196B274E0037AF56 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		38FE6036196B2BCB0037AF56 /* engine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = engine.wav; path = ../engine.wav; sourceTree = "<group>"; };
+		38FE6038196B2EAE0037AF56 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38FE6039196B2EAE0037AF56 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,7 @@
 		38FE5FFF196B1F210037AF56 = {
 			isa = PBXGroup;
 			children = (
+				38FE6038196B2EAE0037AF56 /* AVFoundation.framework */,
 				38FE600A196B1F210037AF56 /* LyndaParticleEmitters */,
 				38FE6021196B1F210037AF56 /* LyndaParticleEmittersTests */,
 				38FE6009196B1F210037AF56 /* Products */,
@@ -87,6 +93,7 @@
 		38FE600A196B1F210037AF56 /* LyndaParticleEmitters */ = {
 			isa = PBXGroup;
 			children = (
+				38FE6036196B2BCB0037AF56 /* engine.wav */,
 				38FE602E196B1F420037AF56 /* snow.sks */,
 				38FE602F196B1F420037AF56 /* spark.png */,
 				38FE600D196B1F210037AF56 /* AppDelegate.swift */,
@@ -211,6 +218,7 @@
 				38FE6019196B1F210037AF56 /* Images.xcassets in Resources */,
 				38FE6010196B1F210037AF56 /* GameScene.sks in Resources */,
 				38FE6035196B274E0037AF56 /* spark.png in Resources */,
+				38FE6037196B2BCB0037AF56 /* engine.wav in Resources */,
 				38FE6034196B274E0037AF56 /* EngineParticle.sks in Resources */,
 				38FE6030196B1F420037AF56 /* snow.sks in Resources */,
 				38FE6017196B1F210037AF56 /* Main.storyboard in Resources */,

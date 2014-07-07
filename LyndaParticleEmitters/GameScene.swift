@@ -7,10 +7,14 @@
 //
 
 import SpriteKit
+import Foundation
+import AVFoundation
 
 class GameScene: SKScene {
     
     let spaceship = SKSpriteNode(imageNamed: "Spaceship")
+    let engineSound = SKAction.playSoundFileNamed("engine.wav", waitForCompletion: false)
+    
     var touching = false
     
     let snow = NSKeyedUnarchiver.unarchiveObjectWithFile(
@@ -27,6 +31,9 @@ class GameScene: SKScene {
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         touching = true
         engineParticles.particleBirthRate = 500
+        SKAction.repeatActionForever(engineSound)
+        
+        
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
@@ -38,6 +45,7 @@ class GameScene: SKScene {
         /* Called before each frame is rendered */
         if touching {
             spaceship.physicsBody.applyForce(CGVectorMake(0, 150))
+            runAction(engineSound)
         }
     }
     
@@ -56,12 +64,10 @@ class GameScene: SKScene {
         spaceship.yScale = 0.25
         spaceship.position = CGPointMake(size.width/2, size.height/2 - 100)
         spaceship.physicsBody = SKPhysicsBody(rectangleOfSize: spaceship.size)
-        
         addChild(spaceship)
     }
     
     func addSnow() {
-        
         snow.position = CGPointMake(size.width/2, size.height)
         snow.advanceSimulationTime(10.0)
         addChild(snow)

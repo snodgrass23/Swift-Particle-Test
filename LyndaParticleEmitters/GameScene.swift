@@ -45,7 +45,7 @@ class GameScene: SKScene {
         let timeSinceLast = currentTime - lastUpdateTimeInterval
         
         if touching {
-            spaceship.physicsBody.applyForce(CGVectorMake(0, 150))
+            spaceship.physicsBody.applyForce(CGVectorMake(0, 75))
             if timeSinceLast > 0.2 {
                 lastUpdateTimeInterval = currentTime
                 runAction(engineSound)
@@ -56,7 +56,7 @@ class GameScene: SKScene {
     func setupScene() {
         backgroundColor = SKColor.blackColor()
         physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
-        physicsWorld.gravity = CGVectorMake(0, -0.6)
+        physicsWorld.gravity = CGVectorMake(0, -0.5)
         physicsBody.restitution = 0
     }
     
@@ -71,6 +71,7 @@ class GameScene: SKScene {
         spaceship.physicsBody = SKPhysicsBody(rectangleOfSize: spaceship.size)
         spaceship.physicsBody.restitution = 0
         spaceship.physicsBody.friction = 0
+        spaceship.zPosition = 10
         addChild(spaceship)
     }
     

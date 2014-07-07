@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LyndaParticleEmitters.xcodeproj">
+      location = "self:Spacehip.xcodeproj">
    </FileRef>
 </Workspace>

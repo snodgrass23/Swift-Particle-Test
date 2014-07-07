@@ -99,8 +99,7 @@
 				38FE6018196B1F210037AF56 /* Images.xcassets */,
 				38FE600B196B1F210037AF56 /* Supporting Files */,
 			);
-			name = SpaceshipParticles;
-			path = LyndaParticleEmitters;
+			path = SpaceshipParticles;
 			sourceTree = "<group>";
 		};
 		38FE600B196B1F210037AF56 /* Supporting Files */ = {
@@ -117,8 +116,7 @@
 				38FE6024196B1F210037AF56 /* LyndaParticleEmittersTests.swift */,
 				38FE6022196B1F210037AF56 /* Supporting Files */,
 			);
-			name = SpaceshipParticlesTests;
-			path = LyndaParticleEmittersTests;
+			path = SpaceshipParticlesTests;
 			sourceTree = "<group>";
 		};
 		38FE6022196B1F210037AF56 /* Supporting Files */ = {

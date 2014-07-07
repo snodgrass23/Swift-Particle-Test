@@ -69,8 +69,8 @@
 		38FE5FFF196B1F210037AF56 = {
 			isa = PBXGroup;
 			children = (
-				38FE600A196B1F210037AF56 /* LyndaParticleEmitters */,
-				38FE6021196B1F210037AF56 /* LyndaParticleEmittersTests */,
+				38FE600A196B1F210037AF56 /* SpaceshipParticles */,
+				38FE6021196B1F210037AF56 /* SpaceshipParticlesTests */,
 				38FE6009196B1F210037AF56 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38FE600A196B1F210037AF56 /* LyndaParticleEmitters */ = {
+		38FE600A196B1F210037AF56 /* SpaceshipParticles */ = {
 			isa = PBXGroup;
 			children = (
 				38FE603A196B31EC0037AF56 /* engine.wav */,
@@ -99,6 +99,7 @@
 				38FE6018196B1F210037AF56 /* Images.xcassets */,
 				38FE600B196B1F210037AF56 /* Supporting Files */,
 			);
+			name = SpaceshipParticles;
 			path = LyndaParticleEmitters;
 			sourceTree = "<group>";
 		};
@@ -110,12 +111,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		38FE6021196B1F210037AF56 /* LyndaParticleEmittersTests */ = {
+		38FE6021196B1F210037AF56 /* SpaceshipParticlesTests */ = {
 			isa = PBXGroup;
 			children = (
 				38FE6024196B1F210037AF56 /* LyndaParticleEmittersTests.swift */,
 				38FE6022196B1F210037AF56 /* Supporting Files */,
 			);
+			name = SpaceshipParticlesTests;
 			path = LyndaParticleEmittersTests;
 			sourceTree = "<group>";
 		};

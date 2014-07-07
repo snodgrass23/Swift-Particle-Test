@@ -9,27 +9,51 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    
+    let spaceship = SKSpriteNode(imageNamed: "Spaceship")
+    var touching = false
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        backgroundColor = SKColor(red: 0.15, green: 0.15, blue: 0.3, alpha: 1.0)
-        
-        let snowEmmitterPath = NSBundle.mainBundle().pathForResource("snow", ofType: "sks")
-        let snow = NSKeyedUnarchiver.unarchiveObjectWithFile(snowEmmitterPath) as SKEmitterNode
-        snow.position = CGPointMake(size.width/2, size.height)
-        
-        addChild(snow)
-        
+        setupScene()
+        addSnow()
+        addSpaceship()
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        
-        for touch: AnyObject in touches {
-            
-        }
+        touching = true
+    }
+    
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        touching = false
     }
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+        if touching {
+            spaceship.physicsBody.applyForce(CGVectorMake(0, 150))
+        }
+    }
+    
+    func setupScene() {
+        backgroundColor = SKColor(red: 0.15, green: 0.15, blue: 0.3, alpha: 1.0)
+        physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
+        physicsWorld.gravity = CGVectorMake(0, -0.6)
+    }
+    
+    func addSpaceship() {
+        spaceship.xScale = 0.25
+        spaceship.yScale = 0.25
+        spaceship.position = CGPointMake(size.width/2, size.height/2 - 100)
+        spaceship.physicsBody = SKPhysicsBody(rectangleOfSize: spaceship.size)
+        
+        addChild(spaceship)
+    }
+    
+    func addSnow() {
+        let snowEmmitterPath = NSBundle.mainBundle().pathForResource("snow", ofType: "sks")
+        let snow = NSKeyedUnarchiver.unarchiveObjectWithFile(snowEmmitterPath) as SKEmitterNode
+        snow.position = CGPointMake(size.width/2, size.height)
+        snow.advanceSimulationTime(10.0)
+        addChild(snow)
     }
 }

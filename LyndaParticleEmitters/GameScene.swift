@@ -13,6 +13,11 @@ class GameScene: SKScene {
     let spaceship = SKSpriteNode(imageNamed: "Spaceship")
     var touching = false
     
+    let snow = NSKeyedUnarchiver.unarchiveObjectWithFile(
+        NSBundle.mainBundle().pathForResource("snow", ofType: "sks")) as SKEmitterNode
+    let engineParticles = NSKeyedUnarchiver.unarchiveObjectWithFile(
+        NSBundle.mainBundle().pathForResource("EngineParticle", ofType: "sks")) as SKEmitterNode
+    
     override func didMoveToView(view: SKView) {
         setupScene()
         addSnow()
@@ -21,10 +26,12 @@ class GameScene: SKScene {
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         touching = true
+        engineParticles.particleBirthRate = 500
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         touching = false
+        engineParticles.particleBirthRate = 10
     }
    
     override func update(currentTime: CFTimeInterval) {
@@ -41,6 +48,10 @@ class GameScene: SKScene {
     }
     
     func addSpaceship() {
+        engineParticles.position = CGPointMake(0, -spaceship.size.height/2)
+        engineParticles.particleBirthRate = 10
+        spaceship.addChild(engineParticles)
+        
         spaceship.xScale = 0.25
         spaceship.yScale = 0.25
         spaceship.position = CGPointMake(size.width/2, size.height/2 - 100)
@@ -50,8 +61,7 @@ class GameScene: SKScene {
     }
     
     func addSnow() {
-        let snowEmmitterPath = NSBundle.mainBundle().pathForResource("snow", ofType: "sks")
-        let snow = NSKeyedUnarchiver.unarchiveObjectWithFile(snowEmmitterPath) as SKEmitterNode
+        
         snow.position = CGPointMake(size.width/2, size.height)
         snow.advanceSimulationTime(10.0)
         addChild(snow)

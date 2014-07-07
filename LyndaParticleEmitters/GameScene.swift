@@ -13,8 +13,9 @@ import AVFoundation
 class GameScene: SKScene {
     
     let spaceship = SKSpriteNode(imageNamed: "Spaceship")
-    let engineSound = SKAction.playSoundFileNamed("engine.wav", waitForCompletion: false)
+    let engineSound = SKAction.playSoundFileNamed("engine.wav", waitForCompletion: true)
     
+    var lastUpdateTimeInterval: CFTimeInterval = 0
     var touching = false
     
     let snow = NSKeyedUnarchiver.unarchiveObjectWithFile(
@@ -24,16 +25,13 @@ class GameScene: SKScene {
     
     override func didMoveToView(view: SKView) {
         setupScene()
-        addSnow()
         addSpaceship()
+        addSnow()
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         touching = true
         engineParticles.particleBirthRate = 500
-        SKAction.repeatActionForever(engineSound)
-        
-        
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
@@ -43,16 +41,23 @@ class GameScene: SKScene {
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+        
+        let timeSinceLast = currentTime - lastUpdateTimeInterval
+        
         if touching {
             spaceship.physicsBody.applyForce(CGVectorMake(0, 150))
-            runAction(engineSound)
+            if timeSinceLast > 0.2 {
+                lastUpdateTimeInterval = currentTime
+                runAction(engineSound)
+            }
         }
     }
     
     func setupScene() {
-        backgroundColor = SKColor(red: 0.15, green: 0.15, blue: 0.3, alpha: 1.0)
+        backgroundColor = SKColor.blackColor()
         physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
         physicsWorld.gravity = CGVectorMake(0, -0.6)
+        physicsBody.restitution = 0
     }
     
     func addSpaceship() {
@@ -64,6 +69,8 @@ class GameScene: SKScene {
         spaceship.yScale = 0.25
         spaceship.position = CGPointMake(size.width/2, size.height/2 - 100)
         spaceship.physicsBody = SKPhysicsBody(rectangleOfSize: spaceship.size)
+        spaceship.physicsBody.restitution = 0
+        spaceship.physicsBody.friction = 0
         addChild(spaceship)
     }
     

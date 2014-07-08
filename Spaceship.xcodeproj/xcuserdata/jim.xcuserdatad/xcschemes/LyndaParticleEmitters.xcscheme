@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "38FE6007196B1F210037AF56"
                BuildableName = "Spacehip.app"
-               BlueprintName = "Spacehip"
-               ReferencedContainer = "container:Spacehip.xcodeproj">
+               BlueprintName = "Spaceship"
+               ReferencedContainer = "container:Spaceship.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "38FE601D196B1F210037AF56"
                BuildableName = "SpacehipTests.xctest"
-               BlueprintName = "SpacehipTests"
-               ReferencedContainer = "container:Spacehip.xcodeproj">
+               BlueprintName = "SpaceshipTests"
+               ReferencedContainer = "container:Spaceship.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "38FE6007196B1F210037AF56"
             BuildableName = "Spacehip.app"
-            BlueprintName = "Spacehip"
-            ReferencedContainer = "container:Spacehip.xcodeproj">
+            BlueprintName = "Spaceship"
+            ReferencedContainer = "container:Spaceship.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "38FE6007196B1F210037AF56"
             BuildableName = "Spacehip.app"
-            BlueprintName = "Spacehip"
-            ReferencedContainer = "container:Spacehip.xcodeproj">
+            BlueprintName = "Spaceship"
+            ReferencedContainer = "container:Spaceship.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "38FE6007196B1F210037AF56"
             BuildableName = "Spacehip.app"
-            BlueprintName = "Spacehip"
-            ReferencedContainer = "container:Spacehip.xcodeproj">
+            BlueprintName = "Spaceship"
+            ReferencedContainer = "container:Spaceship.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

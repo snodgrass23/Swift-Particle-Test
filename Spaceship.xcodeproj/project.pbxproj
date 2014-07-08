@@ -31,7 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		38FE6008196B1F210037AF56 /* Spacehip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spacehip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FE6008196B1F210037AF56 /* Spaceship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spaceship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FE600C196B1F210037AF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FE600D196B1F210037AF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38FE600F196B1F210037AF56 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		38FE6013196B1F210037AF56 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		38FE6016196B1F210037AF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38FE6018196B1F210037AF56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		38FE601E196B1F210037AF56 /* SpacehipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacehipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FE601E196B1F210037AF56 /* SpaceshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FE6023196B1F210037AF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FE6024196B1F210037AF56 /* LyndaParticleEmittersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyndaParticleEmittersTests.swift; sourceTree = "<group>"; };
 		38FE602E196B1F420037AF56 /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		38FE6009196B1F210037AF56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38FE6008196B1F210037AF56 /* Spacehip.app */,
-				38FE601E196B1F210037AF56 /* SpacehipTests.xctest */,
+				38FE6008196B1F210037AF56 /* Spaceship.app */,
+				38FE601E196B1F210037AF56 /* SpaceshipTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38FE6007196B1F210037AF56 /* Spacehip */ = {
+		38FE6007196B1F210037AF56 /* Spaceship */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38FE6028196B1F210037AF56 /* Build configuration list for PBXNativeTarget "Spacehip" */;
+			buildConfigurationList = 38FE6028196B1F210037AF56 /* Build configuration list for PBXNativeTarget "Spaceship" */;
 			buildPhases = (
 				38FE6004196B1F210037AF56 /* Sources */,
 				38FE6005196B1F210037AF56 /* Frameworks */,
@@ -142,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = Spacehip;
+			name = Spaceship;
 			productName = LyndaParticleEmitters;
-			productReference = 38FE6008196B1F210037AF56 /* Spacehip.app */;
+			productReference = 38FE6008196B1F210037AF56 /* Spaceship.app */;
 			productType = "com.apple.product-type.application";
 		};
-		38FE601D196B1F210037AF56 /* SpacehipTests */ = {
+		38FE601D196B1F210037AF56 /* SpaceshipTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38FE602B196B1F210037AF56 /* Build configuration list for PBXNativeTarget "SpacehipTests" */;
+			buildConfigurationList = 38FE602B196B1F210037AF56 /* Build configuration list for PBXNativeTarget "SpaceshipTests" */;
 			buildPhases = (
 				38FE601A196B1F210037AF56 /* Sources */,
 				38FE601B196B1F210037AF56 /* Frameworks */,
@@ -160,9 +160,9 @@
 			dependencies = (
 				38FE6020196B1F210037AF56 /* PBXTargetDependency */,
 			);
-			name = SpacehipTests;
+			name = SpaceshipTests;
 			productName = LyndaParticleEmittersTests;
-			productReference = 38FE601E196B1F210037AF56 /* SpacehipTests.xctest */;
+			productReference = 38FE601E196B1F210037AF56 /* SpaceshipTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +183,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 38FE6003196B1F210037AF56 /* Build configuration list for PBXProject "Spacehip" */;
+			buildConfigurationList = 38FE6003196B1F210037AF56 /* Build configuration list for PBXProject "Spaceship" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -196,8 +196,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38FE6007196B1F210037AF56 /* Spacehip */,
-				38FE601D196B1F210037AF56 /* SpacehipTests */,
+				38FE6007196B1F210037AF56 /* Spaceship */,
+				38FE601D196B1F210037AF56 /* SpaceshipTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		38FE6020196B1F210037AF56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 38FE6007196B1F210037AF56 /* Spacehip */;
+			target = 38FE6007196B1F210037AF56 /* Spaceship */;
 			targetProxy = 38FE601F196B1F210037AF56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -351,7 +351,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LyndaParticleEmitters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Spacehip;
+				PRODUCT_NAME = Spaceship;
 			};
 			name = Debug;
 		};
@@ -362,7 +362,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LyndaParticleEmitters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Spacehip;
+				PRODUCT_NAME = Spaceship;
 			};
 			name = Release;
 		};
@@ -381,7 +381,7 @@
 				INFOPLIST_FILE = LyndaParticleEmittersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SpacehipTests;
+				PRODUCT_NAME = SpaceshipTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -397,7 +397,7 @@
 				INFOPLIST_FILE = LyndaParticleEmittersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SpacehipTests;
+				PRODUCT_NAME = SpaceshipTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -405,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38FE6003196B1F210037AF56 /* Build configuration list for PBXProject "Spacehip" */ = {
+		38FE6003196B1F210037AF56 /* Build configuration list for PBXProject "Spaceship" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38FE6026196B1F210037AF56 /* Debug */,
@@ -414,21 +414,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38FE6028196B1F210037AF56 /* Build configuration list for PBXNativeTarget "Spacehip" */ = {
+		38FE6028196B1F210037AF56 /* Build configuration list for PBXNativeTarget "Spaceship" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38FE6029196B1F210037AF56 /* Debug */,
 				38FE602A196B1F210037AF56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		38FE602B196B1F210037AF56 /* Build configuration list for PBXNativeTarget "SpacehipTests" */ = {
+		38FE602B196B1F210037AF56 /* Build configuration list for PBXNativeTarget "SpaceshipTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38FE602C196B1F210037AF56 /* Debug */,
 				38FE602D196B1F210037AF56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
